@@ -1,0 +1,71 @@
+<!Doctype HTML>
+<HTML lang="pt">
+   <head>
+      <title>Batalha Naval</title>
+      <meta charset="utf-8">
+   </head>
+
+   <body id="Fundo">
+   <center><!--Coloca todos os contiudos da página no centro-->
+	<script src = batalhanaval.js type="text/javascript" charset="utf-8"></script> <!-- Ativa o script-->
+	<link href= batalhanaval.css rel="stylesheet" type="text/css">
+	<h1>Batalha Naval</h1> <!-- Título do Jogo-->
+	<FORM name="BatalhaNaval">
+	<div id= "trofeu" class="trofeu" style="display: none;"> 
+	<img src="trofeu.gif" height="250" width="250"/>
+	</div>
+	<div class="jogo">
+		<h2>Mapa</h2>
+		<table class="tabela2">
+			<tr>
+				<td class="tabela2" align = "center"> 1 </td>
+				<td class="tabela2" align = "center"> 2 </td>
+				<td class="tabela2" align = "center"> 3 </td>
+				<td class="tabela2" align = "center"> 4 </td>
+				<td class="tabela2" align = "center"> 5 </td>
+				<td class="tabela2" align = "center"> 6 </td>
+				<td class="tabela2" align = "center"> 7 </td>
+				<td class="tabela2" align = "center"> 8 </td>
+				<td class="tabela2" align = "center"> 9 </td>
+			</tr>
+		</table>
+		<table class="tabela1">
+			<tr>
+				<td class="tabela1" id="1" bgcolor="white"> </td>
+				<td class="tabela1" id="2" bgcolor="white"> </td>
+				<td class="tabela1" id="3" bgcolor="white"> </td>
+				<td class="tabela1" id="4" bgcolor="white"> </td>
+				<td class="tabela1" id="5" bgcolor="white"> </td>
+				<td class="tabela1" id="6" bgcolor="white"> </td>
+				<td class="tabela1" id="7" bgcolor="white"> </td>
+				<td class="tabela1" id="8" bgcolor="white"> </td>
+				<td class="tabela1" id="9" bgcolor="white"> </td>
+			</tr>
+		</table> <br><br>
+			<button type="button" onclick="inicio()">Novo Jogo</button> <br><br> <!-- Botão de novo jogo que ao precionar começa um novo jogo-->
+
+			Informação: <INPUT type="txt" name="info" value='' Size="15"><br><br>
+			Escreve a coordenada:
+			<INPUT type="txt" name="coordenada" value='' Size="10"><br><br>
+			Podes usar este teclado para escrever o número:<br><br>
+			<!-- Cria os botões que são utilizados para digitar os números com os quais se joga o jogo -->
+			<INPUT class="botao" type="button" name="one"  value="  1  " OnClick="BatalhaNaval.coordenada.value += 1">
+			<INPUT class="botao" type="button" name="one"  value="  2  " OnClick="BatalhaNaval.coordenada.value += 2">
+			<INPUT class="botao" type="button" name="one"  value="  3  " OnClick="BatalhaNaval.coordenada.value += 3"><br>
+			<INPUT class="botao" type="button" name="one"  value="  4  " OnClick="BatalhaNaval.coordenada.value += 4">
+			<INPUT class="botao" type="button" name="one"  value="  5  " OnClick="BatalhaNaval.coordenada.value += 5">
+			<INPUT class="botao" type="button" name="one"  value="  6  " OnClick="BatalhaNaval.coordenada.value += 6"><br>
+			<INPUT class="botao" type="button" name="one"  value="  7  " OnClick="BatalhaNaval.coordenada.value += 7">
+			<INPUT class="botao" type="button" name="one"  value="  8  " OnClick="BatalhaNaval.coordenada.value += 8">
+			<INPUT class="botao" type="button" name="one"  value="  9  " OnClick="BatalhaNaval.coordenada.value += 9"><br><br>
+			
+			<INPUT class="botao" type="button" name="DoIt" value="3.    Verificar!    " OnClick="Jogo(BatalhaNaval.coordenada.value); BatalhaNaval.coordenada.value=''"><br><br>
+			Instruçôes: <br>
+			1-Carregue num botão Novo Jogo.<br>
+			2-Carregue no botão da coordenada que acha que está o navio.<br>
+			3-Verifique e tente afundar o navio!
+		</div>
+	</FORM>
+	</center>	
+   </body>
+</HTML>
